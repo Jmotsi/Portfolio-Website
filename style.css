@@ -22,3 +22,28 @@
     margin: 0;
   }
   
+  .container {  display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-gap: 16px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    column-gap: 2em;
+    grid-template-areas:
+      "about-header about-information"
+      "work-header projects"
+      "contact-header contactinformation";
+  }
+  
+  .about-header { grid-area: about-header; }
+  
+  .work-header { grid-area: work-header; }
+  
+  .contact-header { grid-area: contact-header; }
+  
+  .about-information { grid-area: about-information; }
+  
+  .projects { grid-area: projects; }
+  
+  .contactinformation { grid-area: contactinformation; }
